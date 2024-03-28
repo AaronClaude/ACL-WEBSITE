@@ -91,7 +91,7 @@ nav ul li a:hover:after {
 .btn-1:hover {
     background-color: #252525;
     color: #f2f2f2;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 /* Designs for heading of the website */
@@ -129,7 +129,7 @@ nav ul li a:hover:after {
 .btn-2:hover {
     background-color: #f2f2f2;
     color: #252525;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 /* Text designs for all sections (Services, Products, etc.) */
@@ -145,17 +145,62 @@ section h2 {
     
 }
 
+section p {
+    margin-bottom: 1rem;
+}
 
+/* Services card designs */
 
-.service {
-    text-align: center;
-    margin-bottom: 30px;
+#services h2 {
+    padding-top: 10px;
+}
+#services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Allow flexible number of columns with minimum width of 250px */
+    grid-gap: 30px; /* Add gap between grid items */
+    max-width: 1200px; /* Set maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    justify-content: center; /* Horizontally center grid items */
+}
+
+#services .container .service {
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add slight shadow effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Vertically align items */
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center; /* Center align text */
+    width: 100%; /* Set width to 100% to fill grid item */
+}
+
+#services .container .service .btn {
+    display: inline-block;
+    background-color: transparent;
+    color: #252525;
+    border: 2px solid #252525;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+#services .container .service .btn:hover {
+    background-color: #252525;
+    color: #f2f2f2;
+    transition: 0.4s;
 }
 
 .service img {
-    width: 100px; 
+    width: 100%; /* Set image width to 100% */
+    max-width: 300px; /* Limit maximum width of image */
     height: auto;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .service h3 {
@@ -166,6 +211,12 @@ section h2 {
 .service p {
     margin-bottom: 20px;
 }
+
+
+
+
+
+
 
 .product-card {
     border: 1px solid #252525;
