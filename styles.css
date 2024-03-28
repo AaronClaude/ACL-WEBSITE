@@ -20,7 +20,7 @@ body {
 
 /* Nav bar design and format*/
 header {
-    background: #f2f2f2;
+    background: #e1e1e1;
     color: #252525;
     display: flex;
     align-items: center;
@@ -71,7 +71,7 @@ nav ul li a:after {
     width: 0;
     left: 0;
     bottom: -10px;
-    transition: 0.3s;
+    transition: 0.5s ease
 }
 
 nav ul li a:hover:after {
@@ -91,47 +91,7 @@ nav ul li a:hover:after {
 .btn-1:hover {
     background-color: #252525;
     color: #f2f2f2;
-    transition: 0.4s;
-}
-
-/* Designs for heading of the website */
-#heading {
-    background: url('img/header-img.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 220px 0;
-    text-align: center;
-    color: #fff;
-    position: relative;
-}
-
-#heading h2 {
-    font-size: 36px;
-    margin-bottom: 15px;   
-}
-#heading p {
-    font-size: 15px;
-    margin-bottom: 30px;  
-}
-
-/* Buttons for getting started on the header of the website */
-.btn-2 {
-    display: inline-block;
-    background-color: transparent;
-    color: #f2f2f2;
-    border: 2px solid #f2f2f2;
-    padding: 10px 30px;
-    text-decoration: none;
-    border-radius: 25px;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
-.btn-2:hover {
-    background-color: #f2f2f2;
-    color: #252525;
-    transition: 0.4s;
+    transition: 0.5s ease
 }
 
 /* Text designs for all sections (Services, Products, etc.) */
@@ -151,11 +111,53 @@ section p {
     margin-bottom: 1rem;
 }
 
-/* About Us Section */
+/* Designs for heading of the website */
+#heading {
+    background: url('img/header-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 250px 0;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+#heading h2 {
+    font-size: 40px;
+    margin-bottom: 15px;   
+}
+#heading p {
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 30px;  
+}
+
+/* Buttons for getting started on the header of the website */
+.btn-2 {
+    display: inline-block;
+    background-color: transparent;
+    color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.btn-2:hover {
+    background-color: #f2f2f2;
+    color: #252525;
+    transition: 0.5s ease
+}
+
+
 /* About Us Section */
 #about-us {
     padding: 100px 0;
-    margin-top: 20px;
+    background-color: #252525;
+    color: #f2f2f2;
 }
 
 #about-us .container {
@@ -171,6 +173,7 @@ section p {
     width: 100%;
     max-width: 550px; /* Adjust the width as needed */
     padding-left: 40px; /* Adjust spacing between video and text */
+    text-align: left;
 }
 
 .about-text h2 {
@@ -180,22 +183,23 @@ section p {
 
 .about-text p {
     font-size: 16px;
-    margin-bottom: 20px;
+    text-indent: 20px;
+    margin-bottom: 40px;
 }
 
 .about-text .btn {
     text-decoration: none;
-    color: #252525;
+    color: #f2f2f2;
     margin-left: -5px;
     margin-right: 10px;
-    border: 2px solid #252525;
+    border: 2px solid #f2f2f2;
     padding: 10px 20px;
     border-radius: 25px;
 }
 
 .about-text .btn:hover {
-    background-color: #252525;
-    color: #f2f2f2;
+    background-color: #f2f2f2;
+    color: #252525;
     transition: 0.4s;
 }
 
@@ -206,6 +210,7 @@ section p {
     padding-top: 28.59%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
     position: relative;
     overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);
 }
 
 .video-container iframe {
@@ -215,17 +220,17 @@ section p {
     width: 100%;
     height: 100%; /* Adjust the height to fill the container */
     border: 0;
+    
 }
 
-
-
-
-
-
 /* Services card designs */
+#services {
+    background-color: #f3f3f3;
+}
 #services h2 {
     padding-top: 10px;
 }
+
 #services .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Allow flexible number of columns with minimum width of 250px */
@@ -234,6 +239,7 @@ section p {
     margin: 0 auto; /* Center the container */
     justify-content: center; /* Horizontally center grid items */
 }
+
 
 #services .container .service {
     border: 1px solid #ccc; /* Border style */
@@ -249,6 +255,11 @@ section p {
     padding-right: 30px;
     text-align: center; /* Center align text */
     width: 100%; /* Set width to 100% to fill grid item */
+    transition: 0.5s ease;
+}
+
+#services .container .service:hover {
+    border: 1px solid #252525;
 }
 
 #services .container .service .btn {
@@ -264,7 +275,7 @@ section p {
 #services .container .service .btn:hover {
     background-color: #252525;
     color: #f2f2f2;
-    transition: 0.4s;
+    transition: 0.5s ease;
 }
 
 .service img {
