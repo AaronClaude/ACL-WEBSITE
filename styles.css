@@ -200,6 +200,7 @@ section p {
 }
 
 .video-container {
+    margin-top: 50px;
     width: 100%;
     max-width: 600px; /* Adjust the width as needed */
     padding-top: 28.59%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
