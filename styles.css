@@ -124,6 +124,8 @@ nav ul li a:hover:after {
     padding: 10px 30px;
     text-decoration: none;
     border-radius: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .btn-2:hover {
@@ -149,8 +151,77 @@ section p {
     margin-bottom: 1rem;
 }
 
-/* Services card designs */
+/* About Us Section */
+/* About Us Section */
+#about-us {
+    padding: 100px 0;
+    margin-top: 20px;
+}
 
+#about-us .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    width: 100%;
+    max-width: 550px; /* Adjust the width as needed */
+    padding-left: 40px; /* Adjust spacing between video and text */
+}
+
+.about-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.about-text .btn {
+    text-decoration: none;
+    color: #252525;
+    margin-left: -5px;
+    margin-right: 10px;
+    border: 2px solid #252525;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.about-text .btn:hover {
+    background-color: #252525;
+    color: #f2f2f2;
+    transition: 0.4s;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 600px; /* Adjust the width as needed */
+    padding-top: 28.59%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Adjust the height to fill the container */
+    border: 0;
+}
+
+
+
+
+
+
+/* Services card designs */
 #services h2 {
     padding-top: 10px;
 }
@@ -167,7 +238,7 @@ section p {
     border: 1px solid #ccc; /* Border style */
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add slight shadow effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add slight shadow effect */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -201,6 +272,12 @@ section p {
     height: auto;
     margin-bottom: 20px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;    
+}
+
+.service img:hover {
+    transform: scale(1.05); /* Zoom in slightly on hover */
 }
 
 .service h3 {
@@ -214,32 +291,6 @@ section p {
 
 
 
-
-
-
-
-.product-card {
-    border: 1px solid #252525;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.product-card img {
-    width: 100px; /* Adjust size as needed */
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.product-card h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.product-card p {
-    margin-bottom: 20px;
-}
 
 footer {
     background: #252525;

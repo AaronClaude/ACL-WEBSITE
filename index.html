@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="styles.css">
 
     <title>ACL Computer Software Solutions</title>
@@ -22,9 +23,9 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
+                    <li><a href="#about-us">About us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#products">Products</a></li>
-                    <li><a href="#">About us</a></li>
                     <li><a href="#contacts">Contacts</a></li>
                     <a class = "btn-1" href="#">Sign Up</a>
                 </ul>
@@ -37,9 +38,23 @@
             <h2>Your One-Stop Solution for Computer Repair and Parts</h2>
             <p>We provide reliable computer repair services and offer a wide range of computer parts to meet your needs.</p>
             <a href="#contacts" class="btn-2">Get Started</a>
-
+            <a href="#products" class="btn-2">Shop now</a>
         </div>
     </section>
+
+    <section id="about-us">
+        <div class="container">
+            <div class="video-container">
+                <iframe src="videos/ACL-ads.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec tellus sed risus aliquet eleifend. Cras sagittis velit eu ante tristique ultricies. Morbi dapibus enim nec diam malesuada, a suscipit quam feugiat.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    
 
     <section id="services">
         <h2>Our Services</h2>
@@ -86,24 +101,42 @@
     </section>
 
     <section id="products">
+        
         <div class="container">
             <h2>Our Products</h2>
-            
-            <div class="product-card">
-                <img src="cpu.jpg" alt="CPU">
-                <h3>CPU</h3>
-                <p>Description of CPU.</p>
-                <a href="#" class="btn">Buy Now</a>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="carousel-1.jpg" alt="CPU">
+                        <div class="carousel-caption">
+                            <h3>CPU</h3>
+                            <p>Description of CPU.</p>
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="graphics_card.jpg" alt="Graphics Card">
+                        <div class="carousel-caption">
+                            <h3>Graphics Card</h3>
+                            <p>Description of Graphics Card.</p>
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="motherboard.jpg" alt="Motherboard">
+                        <div class="carousel-caption">
+                            <h3>Motherboard</h3>
+                            <p>Description of Motherboard.</p>
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <!-- Add more carousel items as needed -->
+                </div>
+
             </div>
-            <div class="product-card">
-                <img src="graphics_card.jpg" alt="Graphics Card">
-                <h3>Graphics Card</h3>
-                <p>Description of Graphics Card.</p>
-                <a href="#" class="btn">Buy Now</a>
-            </div>
-            <!-- Add more product cards as needed -->
         </div>
     </section>
+    
 
     <section id="contacts">
         <div class="container">
@@ -121,10 +154,13 @@
         </div>
     </section>
 
+    
+
     <footer>
         <div class="container">
             <p>&copy; 2024 ACL Computer Software Solutions. All rights reserved.</p>
         </div>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </html>
