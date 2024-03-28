@@ -7,9 +7,16 @@
 html {
     scroll-behavior: smooth;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
 
 /* Same format for all containers inside the website */
 .container {
@@ -183,7 +190,7 @@ section p {
 
 .about-text p {
     font-size: 16px;
-    text-indent: 20px;
+    text-indent: 30px;
     margin-bottom: 40px;
 }
 
@@ -302,7 +309,70 @@ section p {
 }
 
 
+/* Custom CSS for the carousel */
+#products {
+    padding: 100px 0;
+}
 
+#products .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#products h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#products {
+    background-color: #f3f3f3;
+}
+/* Carousel Caption */
+.carousel-item img {
+    width: 100%; /* Set image width to 100% */
+    max-width: 700px; /* Limit maximum width of image */
+    height: 500px; /* Maintain aspect ratio and crop if needed */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff; /* White text color */
+    padding: 30px; /* Padding inside the caption */
+    bottom: 0; /* Align caption to the bottom */
+    width: 100%; /* Full width */
+    left: 0;
+}
+/* Carousel Caption Title */
+.carousel-caption h3 {
+    font-size: 1rem; /* Larger font size for title */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+/* Carousel Caption Description */
+.carousel-caption p {
+    font-size: 1rem; /* Font size for description */
+}
+
+/* Custom styles for carousel control buttons */
+.carousel-control-prev, .carousel-control-next {
+    color: #000; /* Black color for buttons */
+    background-color: black; /* Transparent background */
+    border: none; /* Remove border */
+    margin-top: 125px;
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+
+/* Hide the arrows on extra small devices */
+@media (max-width: 576px) {
+    .carousel-control-prev, .carousel-control-next {
+        display: none;
+    }
+}
 
 footer {
     background: #252525;
