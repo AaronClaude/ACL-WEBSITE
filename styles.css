@@ -368,32 +368,19 @@ section p {
 }
 
 
-/* Custom CSS for the carousel */
-#products {
-    padding: 100px 0;
-}
 
-#products .container {
-    max-width: 800px; /* Reduced the maximum width */
-    margin: 0 auto;
-}
-
-#products h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-#products {
-    background-color: #f3f3f3;
-}
 
 /* New Carousel */
+#myCarousel {
+    background-color: #f2f2f2;
+}
 .product-card {
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
   .product-card img {
     width: 100%;
@@ -403,6 +390,20 @@ section p {
     bottom: 1px;
   }
 
+.btn-3 {
+    text-decoration: none;
+    color: #252525;
+    border: 2px solid #252525;
+    padding: 10px 50px;
+    border-radius: 25px;
+}
+
+
+.btn-3:hover {
+    background-color: #252525;
+    color: #f2f2f2;
+    transition: 0.5s ease
+}
 
 /* Hide the arrows on extra small devices */
 @media (max-width: 768px) {
