@@ -57,3 +57,11 @@ window.onscroll = function() {
     }
     prevScrollpos = currentScrollPos;
 }
+
+
+const toggleMenu = document.querySelector('.toggle-menu');
+const navLinks = document.querySelector('nav ul');
+
+toggleMenu.addEventListener('click', function() {
+    navLinks.classList.toggle('show');
+});
