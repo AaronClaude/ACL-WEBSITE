@@ -12,8 +12,6 @@ html {
     --bs-body-font-family: 'Poppins', sans-serif;
 }
 
-
-/* Same format for all containers inside the website */
 .container {
     width: 100%;
     top: 0;
@@ -158,6 +156,7 @@ section p {
     margin-bottom: 30px;  
 }
 
+
 /* Buttons for getting started on the header of the website */
 .btn-2 {
     display: inline-block;
@@ -248,6 +247,7 @@ section p {
     
 }
 
+
 /* Services card designs */
 #services {
     background-color: #f3f3f3;
@@ -326,18 +326,33 @@ section p {
     margin-bottom: 20px;
 }
 
-/* Statistics section */
 
+/* Statistics section */
 #statistics {
-    background-color: #252525;
+    background-image: url('img/8.jpg'); /* Replace 'your-background-image.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
     padding: 100px 0;
     color: #f2f2f2;
     text-align: center;
+    position: relative;
+}
+
+#statistics::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity here (0.5 means 50% opacity) */
 }
 
 #statistics .container {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative; /* To make sure content appears on top of the background */
+    z-index: 1; /* Ensure content is on top of the overlay */
 }
 
 #statistics h2 {
@@ -350,17 +365,18 @@ section p {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
 }
 
 .counter {
     width: 200px;
     margin-bottom: 30px;
 }
+
 .counter span {
     font-size: 35px;
     font-weight: 700;
 }
+
 .counter p {
     margin-top: 10px;
     font-size: 18px;
@@ -368,17 +384,20 @@ section p {
 }
 
 
+/* Product Carousel */
+#products {
+    background-color: #f3f3f3;
+}
 
-
-/* New Carousel */
-#myCarousel {
-    background-color: #f2f2f2;
+#products .container h5 {
+    font-weight: 500;
+    font-size: 15px;
 }
 .product-card {
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-top: 20px;
     margin-bottom: 40px;
   }
@@ -387,7 +406,7 @@ section p {
     height: auto;
   }
   .product-card .carousel-indicators {
-    bottom: 1px;
+    bottom: -5px;
   }
 
 .btn-3 {
@@ -398,12 +417,71 @@ section p {
     border-radius: 25px;
 }
 
-
 .btn-3:hover {
     background-color: #252525;
     color: #f2f2f2;
     transition: 0.5s ease
 }
+
+/* Previous clients boxes (Scrapbook) */
+
+.prev-clients {
+    background-color: #252525;
+}
+
+.prev-clients h2 {
+    color: #f2f2f2;
+    margin-bottom: 30px;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
+}
+.image-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.image-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    
+}
+.image-item:hover img {
+    transform: scale(1.1);
+}
+.image-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.image-item:hover .overlay {
+    opacity: 1;
+}
+.image-item .overlay-content {
+    text-align: center;
+}
+.image-item img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+.overlay-content h5 {
+    margin-bottom: 10px;
+}
+
 
 /* Hide the arrows on extra small devices */
 @media (max-width: 768px) {
@@ -469,7 +547,6 @@ section p {
         
     }
 
-   
 }
 
 
