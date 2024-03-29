@@ -8,13 +8,8 @@ html {
     scroll-behavior: smooth;
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-style: normal;
+:root {
+    --bs-body-font-family: 'Poppins', sans-serif;
 }
 
 
@@ -28,20 +23,26 @@ body {
 /* Nav bar design and format*/
 header {
     background: #e1e1e1;
+    font-weight: 400;
+    font-style: normal;
     color: #252525;
+    border-bottom: 2px solid #ccc;
     display: flex;
     align-items: center;
     padding: 2.5px;
     position: fixed; 
     top: 0; 
     width: 100%; 
+    height: 75px;
     z-index: 1000; 
+    transition: 0.5s;
 }
 
 header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 header img {
@@ -52,20 +53,29 @@ header img {
 
 header h1 {
     font-size: 18px;
+    font-weight: 500;
     justify-content: left;
-    margin-right: 16rem;
+    margin-right: 13.5rem;
+    padding-top: 5px;
 }
 
+nav ul {
+    padding-top: 15.5px;
+}
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 15px;
+}
+
+nav ul li:last-child {
+    margin-left: auto; /* Pushes Sign Up button to the right */
 }
 
 nav ul li a {
     color: #252525;
     position: relative;
     text-decoration: none;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.2px;
     font-size: 15px;
     padding: 0 10px;
 }
@@ -89,7 +99,7 @@ nav ul li a:hover:after {
 .btn-1 {
     text-decoration: none;
     color: #252525;
-    margin-left: -5px;
+    margin-left: 10px;
     margin-right: 10px;
     border: 2px solid #252525;
     padding: 10px 20px;
@@ -111,7 +121,7 @@ section h2 {
     font-size: 30px;
     margin-top: 30px;
     margin-bottom: 10px;
-    
+    font-weight: 700;
 }
 
 section p {
@@ -132,6 +142,7 @@ section p {
 
 #heading h2 {
     font-size: 40px;
+    font-weight: 700;
     margin-bottom: 15px;   
 }
 #heading p {
@@ -308,6 +319,47 @@ section p {
     margin-bottom: 20px;
 }
 
+/* Statistics section */
+
+#statistics {
+    background-color: #252525;
+    padding: 100px 0;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+#statistics .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#statistics h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    padding-top: -50px;
+}
+
+.counter-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.counter {
+    width: 200px;
+    margin-bottom: 30px;
+}
+.counter span {
+    font-size: 35px;
+    font-weight: 700;
+}
+.counter p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
 
 /* Custom CSS for the carousel */
 #products {
@@ -373,6 +425,48 @@ section p {
         display: none;
     }
 }
+
+@media (max-width: 991.98px) {
+    header {
+        height: auto; /* Allow header height to adjust based on content */
+        padding: 10px; /* Adjust padding */
+    }
+
+    header .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    header img {
+        margin-bottom: 10px; /* Add space between logo and other items */
+    }
+
+    header h1 {
+        margin-right: 0; /* Reset margin */
+        margin-bottom: 10px; /* Add space below heading */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Add margin between navigation items */
+    }
+
+    nav ul li:last-child {
+        margin-left: 0; /* Reset margin for the last navigation item */
+    }
+
+    nav ul li a {
+        padding: 10px; /* Adjust padding for navigation links */
+    }
+}
+
+
+
 
 footer {
     background: #252525;
