@@ -393,6 +393,10 @@ section p {
     font-weight: 500;
     font-size: 15px;
 }
+
+#products .container p {
+    color: #252525;
+}
 .product-card {
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -431,7 +435,12 @@ section p {
 
 .prev-clients h2 {
     color: #f2f2f2;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+.prev-clients p {
+    color: #f2f2f2;
+    margin-bottom: 30px;
 }
 .image-grid {
     display: grid;
