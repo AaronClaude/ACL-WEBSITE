@@ -522,22 +522,170 @@ section p {
     z-index: 1; /* Ensure content is on top of the overlay */
 }
 
-/* Hide the arrows on extra small devices */
+
+/* Contacts Section */
+#contacts {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contacts h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+
+#contacts .container {
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically on small screens */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure container takes at least the full height of the viewport */
+}
+
+.contact-form {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition:  border 0.5s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #252525; /* Change border color on focus */
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    color: #252525;
+    border: 2px solid #252525;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #252525;
+    color: #f2f2f2;
+    transition: 0.5s ease
+}
+
+.contact-image img {
+    max-width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.contact-image a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Add transition for fade-in effect */
+}
+
+.contact-image:hover:before {
+    opacity: 1; /* Show background on hover */
+}
+
+.contact-image:hover img {
+    filter: brightness(0.3); /* Adjust brightness of the image on hover */
+    transform: scale(1.1);
+}
+
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-buttons a {
+    margin: 0 10px;
+}
+
+.social-buttons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-buttons img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: #252525;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Add media query for screens smaller than 768px */
 @media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
     header .container {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
 
+    header img {
+        margin: 0;
+    }
+    
     header h1 {
         font-size: 16px;
         margin-right: -10px;
         padding-top: 10px;
-    }
-
-    header img {
-        margin-left: 5px;
     }
 
     nav ul {
@@ -556,6 +704,7 @@ section p {
         transform: translateX(100%);
         opacity: 90%;
         transition: transform 0.5s ease;
+
     }
 
     nav ul.show {
@@ -571,13 +720,7 @@ section p {
         font-size: 20px;
     }
 
-    .btn-1 {
-        margin-top: 20px;
-        margin-left: 0;
-        margin-right: 10px;
-        
-        
-    }
+    
     .toggle-menu {
         display: block;
         font-size: 24px;
@@ -585,18 +728,146 @@ section p {
         margin-right: 20px;
         
     }
+    
+    .toggle-menu ul {
+        display: none;
+        padding-left: 0;
+    }
+    
+    .toggle-menu.active ul {
+        display: block;
+    }
+    
+    .btn-1 {
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 10px;
+        padding: 10px 50px;
+    }
 
+    .container {
+        padding: 10px;
+    }
+    
+    section h2 {
+        font-size: 24px;
+    }
+    
+    #about-us .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .about-text {
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .about-text h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .about-text p {
+        font-size: 14px;
+    }
+    
+    .video-container {
+        margin-top: 50px;
+        width: 100%;
+        max-width: 600px; /* Adjust the width as needed */
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);
+        padding-top: 125%; /* Adjust aspect ratio for smaller screens */
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #services .container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .service img {
+        max-width: 100%;
+    }
+    
+    .service h3 {
+        font-size: 18px;
+    }
+    
+    .service p {
+        font-size: 14px;
+    }
+    
+    #statistics h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .counter-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .counter {
+        width: auto;
+        margin-bottom: 20px;
+    }
+    
+    .counter span {
+        font-size: 30px;
+    }
+    
+    .counter p {
+        font-size: 16px;
+    }
+    
+    #products .container h5 {
+        font-size: 14px;
+    }
+    
+    .product-card img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .btn-3 {
+        padding: 10px 30px;
+    }
+    
+    #contacts .container {
+        padding: 20px;
+    }
+    
+    .contact-form {
+        width: 100%;
+    }
+    
+    .form-group input, .form-group textarea {
+        width: calc(100% - 22px); /* Adjust width */
+    }
+    
+    .form-group textarea {
+        height: 80px;
+    }
+    
+    .contact-image img {
+        max-width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .social-buttons img {
+        width: 30px;
+        height: 30px;
+    }
 }
 
-
-
-footer {
-    background: #252525;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    font-size: 14px;
-}
