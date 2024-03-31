@@ -44,7 +44,7 @@ header .container {
 }
 
 header img {
-    width: 50px; /* Adjust size as needed */
+    width: 50px; 
     height: auto;
     margin-left: -50px;
 }
@@ -66,7 +66,7 @@ nav ul li {
 }
 
 nav ul li:last-child {
-    margin-left: auto; /* Pushes Sign Up button to the right */
+    margin-left: auto; 
 }
 
 nav ul li a {
@@ -195,8 +195,8 @@ section p {
 
 .about-text {
     width: 100%;
-    max-width: 550px; /* Adjust the width as needed */
-    padding-left: 40px; /* Adjust spacing between video and text */
+    max-width: 550px; 
+    padding-left: 40px; 
     text-align: left;
 }
 
@@ -230,8 +230,8 @@ section p {
 .video-container {
     margin-top: 50px;
     width: 100%;
-    max-width: 600px; /* Adjust the width as needed */
-    padding-top: 28.59%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    max-width: 600px; 
+    padding-top: 28.59%; 
     position: relative;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);
@@ -242,7 +242,7 @@ section p {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Adjust the height to fill the container */
+    height: 100%; 
     border: 0;
     
 }
@@ -258,28 +258,28 @@ section p {
 
 #services .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Allow flexible number of columns with minimum width of 250px */
-    grid-gap: 30px; /* Add gap between grid items */
-    max-width: 1200px; /* Set maximum width for the container */
-    margin: 0 auto; /* Center the container */
-    justify-content: center; /* Horizontally center grid items */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+    grid-gap: 30px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    justify-content: center; 
 }
 
 
 #services .container .service {
-    border: 1px solid #ccc; /* Border style */
+    border: 1px solid #ccc; 
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add slight shadow effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Vertically align items */
+    justify-content: space-between; 
     padding: 20px;
     padding-left: 30px;
     padding-right: 30px;
-    text-align: center; /* Center align text */
-    width: 100%; /* Set width to 100% to fill grid item */
+    text-align: center; 
+    width: 100%; 
     transition: 0.5s ease;
 }
 
@@ -304,8 +304,8 @@ section p {
 }
 
 .service img {
-    width: 100%; /* Set image width to 100% */
-    max-width: 300px; /* Limit maximum width of image */
+    width: 100%; 
+    max-width: 300px; 
     height: auto;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -314,7 +314,7 @@ section p {
 }
 
 .service img:hover {
-    transform: scale(1.05); /* Zoom in slightly on hover */
+    transform: scale(1.05); 
 }
 
 .service h3 {
@@ -329,7 +329,7 @@ section p {
 
 /* Statistics section */
 #statistics {
-    background-image: url('img/8.jpg'); /* Replace 'your-background-image.jpg' with the path to your background image */
+    background-image: url('img/8.jpg'); 
     background-size: cover;
     background-position: center;
     padding: 100px 0;
@@ -345,14 +345,14 @@ section p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity here (0.5 means 50% opacity) */
+    background-color: rgba(0, 0, 0, 0.8); 
 }
 
 #statistics .container {
     max-width: 1200px;
     margin: 0 auto;
-    position: relative; /* To make sure content appears on top of the background */
-    z-index: 1; /* Ensure content is on top of the overlay */
+    position: relative; 
+    z-index: 1; 
 }
 
 #statistics h2 {
@@ -495,7 +495,7 @@ section p {
 
 /* Discount section */
 .discount-services {
-    background-image: url('img/7.jpg'); /* Replace 'your-background-image.jpg' with the path to your background image */
+    background-image: url('img/7.jpg'); 
     background-size: cover;
     background-position: center;
     padding: 35px 0;
@@ -512,14 +512,14 @@ section p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity here (0.5 means 50% opacity) */
+    background-color: rgba(0, 0, 0, 0.8); 
 }
 
 .discount-services .container {
     max-width: 1200px;
     margin: 0 auto;
-    position: relative; /* To make sure content appears on top of the background */
-    z-index: 1; /* Ensure content is on top of the overlay */
+    position: relative; 
+    z-index: 1; 
 }
 
 
@@ -538,10 +538,10 @@ section p {
 
 #contacts .container {
     display: flex;
-    flex-direction: column; /* Ensure content stacks vertically on small screens */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Ensure container takes at least the full height of the viewport */
+    min-height: 100vh; 
 }
 
 .contact-form {
@@ -578,7 +578,7 @@ section p {
 }
 
 .form-group input:focus, .form-group textarea:focus {
-    border-color: #252525; /* Change border color on focus */
+    border-color: #252525;
 }
 
 .form-group textarea {
@@ -612,7 +612,7 @@ button[type="submit"]:hover {
     overflow: hidden;
 }
 
-/* Additional rules to adjust the image on hover */
+
 .contact-image:hover #contact-img {
     transform: scale(1.1);
 }
@@ -772,11 +772,11 @@ footer p {
     .video-container {
         margin-top: 50px;
         width: 100%;
-        max-width: 600px; /* Adjust the width as needed */
+        max-width: 600px; 
         position: relative;
         overflow: hidden;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 1.0);
-        padding-top: 125%; /* Adjust aspect ratio for smaller screens */
+        padding-top: 125%; 
     }
     
     .video-container iframe {
@@ -848,7 +848,7 @@ footer p {
     }
     
     .form-group input, .form-group textarea {
-        width: calc(100% - 22px); /* Adjust width */
+        width: calc(100% - 22px); 
     }
     
     .form-group textarea {
