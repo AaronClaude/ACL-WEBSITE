@@ -45,6 +45,7 @@ function startCounters() {
 window.addEventListener('load', startCounters);
 
 
+
 // JavaScript function to hide/show the navbar on scroll
 let prevScrollpos = window.pageYOffset;
 
