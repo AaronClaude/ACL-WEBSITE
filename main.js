@@ -22,7 +22,7 @@ function startCounters() {
                 const targetCount = parseInt(target.getAttribute('data-target'));
                 const updateCount = () => {
                     const count = parseInt(target.innerText);
-                    const increment = targetCount / 100; // Increase the number of increments for a smoother animation
+                    const increment = targetCount / 150; // Increase the number of increments for a smoother animation
                     if (count < targetCount) {
                         target.innerText = Math.ceil(count + increment);
                         setTimeout(updateCount, 10); // Adjust the duration of each increment (milliseconds)
