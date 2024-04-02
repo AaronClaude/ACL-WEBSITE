@@ -329,7 +329,7 @@ section p {
 
 /* Statistics section */
 #statistics {
-    background-image: url('img/8.jpg'); 
+    background-image: url('../img/8.jpg'); 
     background-size: cover;
     background-position: center;
     padding: 100px 0;
@@ -495,7 +495,7 @@ section p {
 
 /* Discount section */
 .discount-services {
-    background-image: url('img/7.jpg'); 
+    background-image: url('../img/7.jpg'); 
     background-size: cover;
     background-position: center;
     padding: 35px 0;
