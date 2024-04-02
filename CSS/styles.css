@@ -134,7 +134,7 @@ section p {
 
 /* Designs for heading of the website */
 #heading {
-    background: url('img/header-img.jpg');
+    background: url('../img/header-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
