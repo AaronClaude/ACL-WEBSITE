@@ -1,9 +1,9 @@
 <?php
 require 'config.php';
 if (isset($_POST["submit"])) {
-    $usernameemail = $_POST["usernameemail"];
+    $username = $_POST["username"];
     $password = $_POST["password"];
-    $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$usernameemail' OR '$usernameemail' ");
+    $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$username' OR '$username' ");
     $row = mysqli_fetch_assoc($result);
     if (mysqli_num_rows($result) > 0) {
         if ($password == $row["password"]) {
@@ -43,14 +43,14 @@ if (isset($_POST["submit"])) {
         <form action="#" method="post" autocomplete="off" class="login-form">
             <h1>SIGN IN</h1>
             <div class="input-group">
-                <input type="text" name="usernameemail" id="usernameemail" placeholder="Email Address or Username" required>
+                <input type="text" name="username" id="username" placeholder="Email Address or Username" required>
                 <input type="password" name="password" id="password" placeholder="Enter Password" required>
             </div>
 
             <button type="submit" name="submit">LOGIN</button>
             <p>OR</p>
             <a href="index.html" id="go-back">Go back?</a>
-            <p class="register-link">Don't have an account? <a href="register.html">Register</a></p>
+            <p class="register-link">Don't have an account? <a href="register.php">Register</a></p>
         </form>
     </div>
 </body>
