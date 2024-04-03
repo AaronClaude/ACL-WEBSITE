@@ -271,8 +271,8 @@ nav .container a {
 
 /* Custom styles for the close button */
 .btn-close {
-    font-size: 1rem; /* Increase the icon size */
-    color: #000; /* Set the color to black */
+    font-size: 1rem; 
+    color: #000; 
     padding: 1rem; /* Adjust padding for better appearance */
     background-color: transparent; /* Remove background color */
     border: none; /* Remove border */
@@ -320,6 +320,7 @@ nav .container a {
     background-color: white;
     transition: 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 #cardProducts:hover {
@@ -334,13 +335,12 @@ nav .container a {
 #cardProducts p {
     color: #f57224;
     font-size: 18px;
-    margin-bottom: -10px;
     font-weight: 500;
 }
 
 #cardProducts button {
     margin-left: 85px;
-    margin-top: 10px;
+    
     border: 2px solid #252525;
     border-radius: 25px;
     padding: 10px 20px;
