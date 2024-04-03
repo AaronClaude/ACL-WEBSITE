@@ -96,7 +96,7 @@ window.onscroll = function() {
     if (prevScrollpos > currentScrollPos) {
         document.querySelector("nav").style.top = "0";
     } else {
-        document.querySelector("nav").style.top = "-75px"; // Adjust the height of the navbar as needed
+        document.querySelector("nav").style.top = "-90px"; // Adjust the height of the navbar as needed
     }
     prevScrollpos = currentScrollPos;
 }
