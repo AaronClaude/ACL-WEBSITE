@@ -9,7 +9,7 @@ if (isset($_POST["submit"])) {
         if ($password == $row["password"]) {
             $_SESSION["login"] = true;
             $_SESSION["id"] = $row["id"];
-            header("Location: index.html");
+            header("Location: acl-store.html");
         } else {
             echo
             "<script> alert ('Wrong Password'); </script>";
@@ -43,7 +43,7 @@ if (isset($_POST["submit"])) {
         <form action="#" method="post" autocomplete="off" class="login-form">
             <h1>SIGN IN</h1>
             <div class="input-group">
-                <input type="text" name="username" id="username" placeholder="Email Address or Username" required>
+                <input type="text" name="username" id="username" placeholder="Username" required>
                 <input type="password" name="password" id="password" placeholder="Enter Password" required>
             </div>
 
